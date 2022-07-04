@@ -1,0 +1,61 @@
+@media(min-width: 0px){
+    .body__index{
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "stories"
+            "feed"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        .stories{
+            grid-area: stories;
+            padding: 1rem 0 1rem 0;
+            border-bottom: solid grey .1rem ;
+            &-item{
+                width: 5rem;
+                &__img{
+                    width: 5rem;
+                    border: solid black .1rem;
+                    border-radius: 100%;
+                    img{
+                        border-radius: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .feed{
+            grid-area: feed;
+            &-item{
+                padding-bottom: 1rem;
+                &__user{
+                    img{
+                        width: 3rem;
+                        border: solid black .1rem;
+                        border-radius: 100%;
+                    }
+                }
+                &__img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &__actions{
+                    i{
+                        font-size: 2rem;
+                    }
+                }
+                &__likes{
+                    span{
+                        font-size: 1.2rem;
+                    }
+                }
+                &__footer{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+@media (min-width: 0px) {
+  header {
+    grid-area: header;
+  }
+  header .navbar {
+    border-bottom: solid grey 0.1rem;
+  }
+  header .navbar-logo {
+    width: 12rem;
+  }
+  header .navbar-logo img {
+    width: 100%;
+  }
+  header .navbar-sections {
+    list-style-type: none;
+    margin: 0;
+  }
+  header .navbar-sections li {
+    font-size: 2rem;
+  }
+  header .navbar-sections a {
+    text-decoration: none;
+    color: black;
+    width: 2.2rem;
+    border-radius: 100%;
+  }
+  header .navbar-sections a .perfil-img {
+    width: 100%;
+    border-radius: 100%;
+  }
+}
+@media (min-width: 0px) {
+  .body__index {
+    display: grid;
+    grid-template-areas: "header" "stories" "feed";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .body__index .stories {
+    grid-area: stories;
+    padding: 1rem 0 1rem 0;
+    border-bottom: solid grey 0.1rem;
+  }
+  .body__index .stories-item {
+    width: 5rem;
+  }
+  .body__index .stories-item__img {
+    width: 5rem;
+    border: solid black 0.1rem;
+    border-radius: 100%;
+  }
+  .body__index .stories-item__img img {
+    border-radius: 100%;
+    width: 100%;
+  }
+  .body__index .feed {
+    grid-area: feed;
+  }
+  .body__index .feed-item {
+    padding-bottom: 1rem;
+  }
+  .body__index .feed-item__user img {
+    width: 3rem;
+    border: solid black 0.1rem;
+    border-radius: 100%;
+  }
+  .body__index .feed-item__img {
+    width: 100%;
+  }
+  .body__index .feed-item__img img {
+    width: 100%;
+  }
+  .body__index .feed-item__actions i {
+    font-size: 2rem;
+  }
+  .body__index .feed-item__likes span {
+    font-size: 1.2rem;
+  }
+  .body__index .feed-item__footer {
+    font-size: 1.2rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

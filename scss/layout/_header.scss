@@ -1,0 +1,31 @@
+@media (min-width: 0px){
+    header{
+        grid-area: header;
+        .navbar{
+            border-bottom: solid grey 0.1rem;
+            &-logo{
+                width: 12rem;
+                img{
+                    width: 100%;
+                }
+            }
+            &-sections{
+                list-style-type: none;
+                margin: 0;
+                li{
+                    font-size: 2rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    width: 2.2rem;
+                    border-radius: 100%;
+                    .perfil-img{
+                        width: 100%;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
