@@ -1,3 +1,6 @@
+@import "./utilities/variables";
 @import "./base/reset";
+@import "./base/only-mobile";
+@import "./base/tablet-desktop";
 @import "./layout/header";
 @import "./views/index";

@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a2a3781daf.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/ico/ico-instagram.png" type="image/x-icon">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Home - Instagram</title>
 </head>
 <body class="body__index">
-    <header>
-        <nav class="navbar d-flex w-100 align-items-center justify-content-evenly">
+    <header class="header-mobile only-mobile d-flex align-items-center p-3">
+        <div class="header-mobile__logo">
+            <img src="./img/logo/Instagram_logo.png" alt="Instagram">
+        </div>
+        <ul class="header-mobile__sections d-flex w-100 justify-content-end gap-4">
+            <li><a href="#"><i class="fa-solid fa-square-plus"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+        </ul>
+    </header>
+    <nav class="navbar only-mobile">
+        <ul class="navbar-sections d-flex w-100 justify-content-around">
+            <li><a href=""><i class="fa-solid fa-house"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-play"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li><a href="#"><img class="perfil-img" src="./img/profile/profile-img.jpg" alt="Gianluca Bredice"></a></li>
+        </ul>
+    </nav>
+    <header class="header-tabletDesktop tablet-desktop">
+        <nav class="navbar tablet-desktop d-flex w-100 align-items-center justify-content-evenly">
             <div class="navbar-logo">
                 <img src="./img/logo/Instagram_logo.png" alt="Instagram">
             </div>
@@ -21,45 +41,46 @@
                 <li><a href="#"><i class="fa-solid fa-square-plus"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                <a href="#"><img class="perfil-img" src="./img/profile/profile-img.jpg" alt="Gianluca Bredice"></a>
+                <li><a href="#"><img class="perfil-img" src="./img/profile/profile-img.jpg" alt="Gianluca Bredice"></a></li>
             </ul>
         </nav>
     </header>
-    <aside class="stories d-flex w-100 align-items-center justify-content-center gap-5">
+    <aside class="stories d-flex align-items-center justify-content-center gap-4 ps-4">
         <div class="stories-item d-flex flex-column align-items-center gap-1">
             <div class="stories-item__img">
-                <img src="./img/users/perfil-transparent.png" alt="">
+                <img class="" src="./img/profile/profile-img.jpg" alt="">
             </div>
             <span class="stories-item__user">Your Story</span>
         </div>
         <div class="stories-item d-flex flex-column align-items-center gap-1">
             <div class="stories-item__img">
-                <img src="./img/users/perfil-transparent.png" alt="">
+                <img class="" src="./img/profile/sere.jpg" alt="">
             </div>
             <span class="stories-item__user">bredisere</span>
         </div>
         <div class="stories-item d-flex flex-column align-items-center gap-1">
             <div class="stories-item__img">
-                <img src="./img/users/perfil-transparent.png" alt="">
+                <img src="./img/profile/cate.jpg" alt="">
             </div>
             <span class="stories-item__user">cbredice</span>
         </div>
         <div class="stories-item d-flex flex-column align-items-center gap-1">
             <div class="stories-item__img">
-                <img src="./img/users/perfil-transparent.png" alt="">
+                <img src="./img/profile/gero.jpg" alt="">
             </div>
-            <span class="stories-item__user">gero_boca05</span>
+            <span class="stories-item__user">gero_boca5</span>
         </div>
         <div class="stories-item d-flex flex-column align-items-center gap-1">
             <div class="stories-item__img">
-                <img src="./img/users/perfil-transparent.png" alt="">
+                <img src="./img/profile/mono.jpg" alt="">
             </div>
-            <span class="stories-item__user">martinbordon05</span>
+            <span class="stories-item__user">martinbordon5</span>
+        </div>
     </aside>
-    <div class="feed d-flex flex-column align-items-center">
+    <div class="feed d-flex flex-column align-items-center gap-5">
         <div class="feed-item d-flex flex-column w-100">
             <div class="feed-item__user d-flex align-items-center w-100 justify-content-start gap-2 p-2">
-                <img src="./img/users/perfil-transparent.png" alt="User">
+                <img src="./img/profile/profile-img.jpg" alt="User">
                 <span class="fw-bold fs-5">bredigian</span>
             </div>
             <div class="feed-item__img">
@@ -87,7 +108,7 @@
         </div>
         <div class="feed-item d-flex flex-column w-100">
             <div class="feed-item__user d-flex align-items-center w-100 justify-content-start gap-2 p-2">
-                <img src="./img/users/perfil-transparent.png" alt="User">
+                <img src="./img/profile/sere.jpg" alt="User">
                 <span class="fw-bold fs-5">bredisere</span>
             </div>
             <div class="feed-item__img">
@@ -115,7 +136,7 @@
         </div>
         <div class="feed-item d-flex flex-column w-100">
             <div class="feed-item__user d-flex align-items-center w-100 justify-content-start gap-2 p-2">
-                <img src="./img/users/perfil-transparent.png" alt="User">
+                <img src="./img/profile/profile-img.jpg" alt="User">
                 <span class="fw-bold fs-5">bredigian</span>
             </div>
             <div class="feed-item__img">
@@ -143,8 +164,8 @@
         </div>
         <div class="feed-item d-flex flex-column w-100">
             <div class="feed-item__user d-flex align-items-center w-100 justify-content-start gap-2 p-2">
-                <img src="./img/users/perfil-transparent.png" alt="User">
-                <span class="fw-bold fs-5">gero_boca05</span>
+                <img src="./img/profile/gero.jpg" alt="User">
+                <span class="fw-bold fs-5">gero_boca5</span>
             </div>
             <div class="feed-item__img">
                 <img src="./img/feed/img4.jpg" alt="">
@@ -164,7 +185,7 @@
                 <span>Likes</span>
             </div>
             <div class="feed-item__footer d-flex flex-column w-100 justify-content-start ps-3 pt-3">
-                <span class="feed-item__footer-user fw-bold">gero_boca05</span>
+                <span class="feed-item__footer-user fw-bold">gero_boca5</span>
                 <p class="feed-item__footer-description">#Messi #Argentina</p>
                 <span class="feed-item__footer-comments">18 comments</span>
             </div>

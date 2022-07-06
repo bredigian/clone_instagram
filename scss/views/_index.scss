@@ -2,26 +2,37 @@
     .body__index{
         display: grid;
         grid-template-areas: 
-            "header"
+            "header-mobile"
             "stories"
             "feed"
+            "navbar-mobile"
         ;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         .stories{
             grid-area: stories;
             padding: 1rem 0 1rem 0;
-            border-bottom: solid grey .1rem ;
+            overflow-x: auto;
             &-item{
-                width: 5rem;
+                width: 6.5rem;
                 &__img{
-                    width: 5rem;
-                    border: solid black .1rem;
+                    width: 6.5rem;
+                    padding: .2rem;
+                    background: $colorInstagram;
                     border-radius: 100%;
+                    transition: all .1s;
                     img{
+                        border: solid white .2rem;
                         border-radius: 100%;
                         width: 100%;
                     }
+                    &:active{
+                        transform: scale(.95);
+                    }
+                }
+                span{
+                    font-size: 1.1rem;
+                    font-weight: 500;
                 }
             }
         }
@@ -32,7 +43,7 @@
                 &__user{
                     img{
                         width: 3rem;
-                        border: solid black .1rem;
+                        border: solid rgb(225, 225, 225) .1rem;
                         border-radius: 100%;
                     }
                 }
@@ -54,6 +65,35 @@
                 }
                 &__footer{
                     font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+@media(min-width: 768px){
+    .body__index{
+        .feed{
+            margin: 0 auto;
+            max-width: 768px;
+            &-item{
+                border: solid rgb(225, 225, 225) .1rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+@media (min-width: 1200px){
+    .body__index{
+        .feed{
+            &-item{
+                &__user{
+                    padding: 1rem !important;
+                }
+                &__actions{
+                    padding: 1rem !important;
+                }
+                &__footer{
+                    padding: 1rem !important;
                 }
             }
         }

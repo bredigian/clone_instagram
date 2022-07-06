@@ -1,0 +1,10 @@
+@media(min-width: 0px){
+    .only-mobile{
+        display: flex !important;
+    }
+}
+@media(min-width: 768px){
+    .only-mobile{
+        display: none !important;
+    }
+}
